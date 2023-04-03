@@ -1,0 +1,8 @@
+composer require statickidz/bedca-api
+"require": {
+    "statickidz/bedca-api": "1.1.0"
+}
+use StaticKidz\BedcaAPI\BedcaClient;
+
+$client = new BedcaClient();
+$foodGroups = $client->getFoodGroups();
